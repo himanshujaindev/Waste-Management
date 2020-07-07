@@ -1,9 +1,8 @@
 # Waste-Management
 
-### Web App @ 
-```
-https://waste-manage.herokuapp.com/
-```
+### Web App
+> https://waste-manage.herokuapp.com
+
 
 ### Setup
 ```
