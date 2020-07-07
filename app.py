@@ -51,7 +51,6 @@ def model_predict(img, model):
     x = x[np.newaxis, ...]
 
     preds = model.predict(x)
-    print("Maximum Probability: ",np.max(preds[0], axis=-1))
     return preds
 
 
@@ -75,7 +74,7 @@ def predict():
 
         # Process your result for human
         pred_proba = "{:.3f}".format(np.max(preds[0], axis=-1))    # Max probability
-
+        print("Maximum Probability: ",pred_proba)
         # pred_class = decode_predictions(preds, top=1)   # ImageNet Decode
 
         # result = str(pred_class[0][0][1])               # Convert to string

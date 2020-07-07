@@ -2,6 +2,8 @@
 // Drag and drop image handling
 //========================================================================
 
+$(".container div").hide("fast"); //Hide all divs
+
 var fileDrag = document.getElementById("file-drag");
 var fileSelect = document.getElementById("file-upload");
 
@@ -10,6 +12,7 @@ fileDrag.addEventListener("dragover", fileDragHover, false);
 fileDrag.addEventListener("dragleave", fileDragHover, false);
 fileDrag.addEventListener("drop", fileSelectHandler, false);
 fileSelect.addEventListener("change", fileSelectHandler, false);
+
 
 function fileDragHover(e) {
   // prevent default behaviour
@@ -37,6 +40,7 @@ var imageDisplay = document.getElementById("image-display");
 var uploadCaption = document.getElementById("upload-caption");
 var predResult = document.getElementById("pred-result");
 var loader = document.getElementById("loader");
+var train_acc = document.getElementById("confidence");
 
 //========================================================================
 // Main button events
@@ -134,6 +138,15 @@ function displayResult(data) {
   hide(loader);
   predResult.innerHTML = data.result;
   show(predResult);
+  displayConfidence(data.probability);
+}
+
+function displayConfidence(conf){
+  var acc = (conf*100).toFixed(2) + "%";
+  train_acc.innerHTML ="Confidence : " + acc;
+  train_acc.style.width = acc;
+
+  $(".container div").show("fast"); //Show all divs
 }
 
 function hide(el) {

@@ -2,7 +2,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #f8f8f8;
+  background-color: #000000;
 }
 
 /* Global button style */
@@ -83,13 +83,22 @@ body {
 }
 
 .upload-box:hover {
-  border-color: rgb(0, 120, 212);
+  border-color: #0078d4;
 }
 
 .upload-box #image-preview {
   max-width: 14rem;
   max-height: 8rem;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title{
+  padding-top: 2%;
+}
+
+.container{
+  padding-top: 3%;
+  padding-bottom: 50px;
 }
 
 #image-result {

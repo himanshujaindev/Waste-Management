@@ -1,5 +1,4 @@
 {% extends "base.html" %} {% block content %}
-
 <div class="main">
   <div class="title">
     <h3>Garbage Detection</h3>
@@ -27,6 +26,13 @@
       <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
     </svg>
   </div>
+
+  <div class="container">
+    <div class="progress">
+      <div id="confidence" class= "progress-bar progress-bar-striped progress-bar-animated" style="width:0%;background-color: rgb(13, 201, 123);">0%</div>
+    </div>
+  </div>
+
 </div>
 
 {% endblock %}
