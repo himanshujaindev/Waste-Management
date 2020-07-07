@@ -1,2 +1,16 @@
 # Waste-Management
-Flask based web app to classify images as garbage and non-garbage
+
+### Web App @ 
+```
+https://waste-manage.herokuapp.com/
+```
+
+### Setup
+```
+pip install -r requirements.txt
+```
+
+### Run and test the server locally
+```
+python app.py
+```
