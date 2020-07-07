@@ -8,3 +8,4 @@ h5py==2.10.0
 tensorflow==2.0.0
 scipy==1.4.1
 joblib==0.16.0
+gunicorn==20.0.4
