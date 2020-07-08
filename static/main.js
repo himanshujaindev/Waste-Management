@@ -78,6 +78,8 @@ function clearImage() {
   show(uploadCaption);
 
   imageDisplay.classList.remove("loading");
+
+  $(".container div").hide("fast"); //Hide all divs
 }
 
 function previewFile(file) {
