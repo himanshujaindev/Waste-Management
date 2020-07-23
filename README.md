@@ -13,3 +13,27 @@ pip install -r requirements.txt
 ```
 python app.py
 ```
+
+### Project Structure
+```
++
+|   .gitignore
+|   app.py
+|   model.py
+|   Procfile
+|   README.md
+|   requirements.txt
+|   util.py
+|
++---models
+|       model.pkl
+|       README.md
+|
++---static
+|       main.css
+|       main.js
+|
+\---templates
+        base.html
+        index.html
+```
